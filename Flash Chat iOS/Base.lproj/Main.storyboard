@@ -3,7 +3,6 @@
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
-        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -36,7 +35,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="⚡️FlashChat" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OAF-wu-PaI">
                                 <rect key="frame" x="102.66666666666669" y="408" width="188" height="36"/>
                                 <fontDescription key="fontDescription" type="system" weight="black" pointSize="30"/>
-                                <color key="textColor" name="AccentColor"/>
+                                <color key="textColor" systemColor="systemBlueColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AEN-ng-reI">
@@ -59,7 +58,7 @@
                                 <state key="normal" title="Register"/>
                                 <connections>
                                     <action selector="registerPassed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5VQ-7t-4dR"/>
-                                    <segue destination="w1T-E5-Pd8" kind="show" id="vwo-tl-Mon"/>
+                                    <segue destination="w1T-E5-Pd8" kind="show" identifier="" id="SLZ-Pp-6Lb"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -104,7 +103,7 @@
                                             <constraint firstAttribute="height" constant="50" id="nKo-7f-zM9"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" textContentType="email"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="emailAddress" textContentType="email"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AO6-xI-nCH">
                                         <rect key="frame" x="0.0" y="72" width="353" height="50"/>
@@ -123,6 +122,10 @@
                                 </constraints>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="Register"/>
+                                <connections>
+                                    <action selector="registerButtonPassed:" destination="w1T-E5-Pd8" eventType="touchUpInside" id="pwf-fu-fUI"/>
+                                    <segue destination="Cqk-PS-M7n" kind="show" identifier="RegisterToChat" id="dMw-cw-cVw"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="sRg-ee-g30"/>
@@ -141,8 +144,6 @@
                     <connections>
                         <outlet property="emailTextfield" destination="Seh-Wv-lj3" id="aiv-fN-ZlZ"/>
                         <outlet property="passwordTextfield" destination="AO6-xI-nCH" id="6II-G2-eAn"/>
-                        <outlet property="registerButtonPassed" destination="VFf-ik-9L9" id="NbK-bb-K8T"/>
-                        <segue destination="Cqk-PS-M7n" kind="show" id="P8L-qC-GOX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mRu-jv-Z40" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -206,7 +207,13 @@
                             <constraint firstItem="YAx-ff-VF4" firstAttribute="leading" secondItem="oOA-LO-7Hl" secondAttribute="leading" constant="10" id="sY0-Fw-Jbd"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="qSy-xI-lMw"/>
+                    <navigationItem key="navigationItem" id="qSy-xI-lMw">
+                        <barButtonItem key="rightBarButtonItem" title="Log out" id="HUX-gI-Gfp">
+                            <connections>
+                                <action selector="logOutButtonPresset:" destination="Cqk-PS-M7n" id="Rrk-gF-AEz"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="messageTextField" destination="uWf-DV-rvf" id="BUC-aS-5nW"/>
                         <outlet property="tebleView" destination="YAx-ff-VF4" id="UCc-t4-7Z0"/>
@@ -252,6 +259,9 @@
                                 </constraints>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="Login"/>
+                                <connections>
+                                    <action selector="loginButtonPressed:" destination="KLj-2M-SxG" eventType="touchUpInside" id="hEx-a0-DGT"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="dmN-qi-eOB"/>
@@ -271,7 +281,7 @@
                         <outlet property="emailTextfield" destination="R2D-DE-RLp" id="PEx-R1-yZA"/>
                         <outlet property="loginButtonPassed" destination="Wtz-o9-o0L" id="h3H-A9-j0I"/>
                         <outlet property="passwordTextfield" destination="dgx-TU-oio" id="7hV-Vq-h2O"/>
-                        <segue destination="Cqk-PS-M7n" kind="show" id="if6-36-OuH"/>
+                        <segue destination="Cqk-PS-M7n" kind="show" identifier="loginIn" id="if6-36-OuH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uRV-lZ-tEE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -280,15 +290,15 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="if6-36-OuH"/>
+        <segue reference="dMw-cw-cVw"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="paperplane" catalog="system" width="128" height="119"/>
-        <namedColor name="AccentColor">
-            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemCyanColor">
             <color red="0.19607843137254902" green="0.67843137254901964" blue="0.90196078431372551" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
