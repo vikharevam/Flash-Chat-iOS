@@ -25,7 +25,7 @@ class WelcomeViewController: UIViewController {
         
         titleLabel.text = ""
     
-        let text = "⚡️FlashChat"
+        let text = K.appName
         var charIndex = 0.0
         
         for letter in text {
@@ -36,7 +36,7 @@ class WelcomeViewController: UIViewController {
             
         }
         
-        var array = [registerButton, loginButton]
+        let array = [registerButton, loginButton]
         
         
         

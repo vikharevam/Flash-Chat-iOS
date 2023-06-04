@@ -2,7 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="rhm-CK-yDt">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -39,8 +39,8 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AEN-ng-reI">
-                                <rect key="frame" x="50" y="713" width="293" height="66"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="45"/>
+                                <rect key="frame" x="80" y="737" width="233" height="42"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="login"/>
                                 <connections>
@@ -49,7 +49,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qgd-AF-sSO">
-                                <rect key="frame" x="100" y="653" width="193" height="40"/>
+                                <rect key="frame" x="100" y="677" width="193" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="n4G-8p-4vc"/>
                                 </constraints>
@@ -67,9 +67,9 @@
                         <constraints>
                             <constraint firstItem="Qgd-AF-sSO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="2zZ-fX-3mj"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="AEN-ng-reI" secondAttribute="bottom" constant="39" id="6HD-dX-Jwk"/>
-                            <constraint firstItem="AEN-ng-reI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="BBf-ac-m6m"/>
+                            <constraint firstItem="AEN-ng-reI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="80" id="BBf-ac-m6m"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Qgd-AF-sSO" secondAttribute="trailing" constant="100" id="CQb-ID-yL4"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="AEN-ng-reI" secondAttribute="trailing" constant="50" id="SeX-4w-NxV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="AEN-ng-reI" secondAttribute="trailing" constant="80" id="SeX-4w-NxV"/>
                             <constraint firstItem="AEN-ng-reI" firstAttribute="top" secondItem="Qgd-AF-sSO" secondAttribute="bottom" constant="20" id="h9y-vn-0nw"/>
                             <constraint firstItem="OAF-wu-PaI" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="nvl-zG-UjN"/>
                             <constraint firstItem="OAF-wu-PaI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qsw-En-YFB"/>
@@ -181,16 +181,6 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="YAx-ff-VF4">
                                 <rect key="frame" x="10" y="133" width="373" height="618.33333333333337"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="AKK-If-sjw">
-                                        <rect key="frame" x="0.0" y="50" width="373" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="AKK-If-sjw" id="ORb-I0-cSc">
-                                            <rect key="frame" x="0.0" y="0.0" width="373" height="44"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </prototypes>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="oOA-LO-7Hl"/>
@@ -216,7 +206,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="messageTextField" destination="uWf-DV-rvf" id="BUC-aS-5nW"/>
-                        <outlet property="tebleView" destination="YAx-ff-VF4" id="UCc-t4-7Z0"/>
+                        <outlet property="tableView" destination="YAx-ff-VF4" id="UCc-t4-7Z0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ehX-RI-mZt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -234,7 +224,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="W0r-7U-Z49">
                                 <rect key="frame" x="40" y="365" width="313" height="122"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="EMail" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="R2D-DE-RLp">
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="1@sew.com" borderStyle="roundedRect" placeholder="EMail" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="R2D-DE-RLp">
                                         <rect key="frame" x="0.0" y="0.0" width="313" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="Lff-GG-sPG"/>
@@ -242,7 +232,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" textContentType="email"/>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dgx-TU-oio">
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="123456" borderStyle="roundedRect" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dgx-TU-oio">
                                         <rect key="frame" x="0.0" y="72" width="313" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="He1-RZ-tfw"/>
@@ -259,6 +249,7 @@
                                 </constraints>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="Login"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Login"/>
                                 <connections>
                                     <action selector="loginButtonPressed:" destination="KLj-2M-SxG" eventType="touchUpInside" id="hEx-a0-DGT"/>
                                 </connections>
@@ -281,7 +272,7 @@
                         <outlet property="emailTextfield" destination="R2D-DE-RLp" id="PEx-R1-yZA"/>
                         <outlet property="loginButtonPassed" destination="Wtz-o9-o0L" id="h3H-A9-j0I"/>
                         <outlet property="passwordTextfield" destination="dgx-TU-oio" id="7hV-Vq-h2O"/>
-                        <segue destination="Cqk-PS-M7n" kind="show" identifier="loginIn" id="if6-36-OuH"/>
+                        <segue destination="Cqk-PS-M7n" kind="show" identifier="LoginToChat" id="if6-36-OuH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uRV-lZ-tEE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -290,7 +281,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="dMw-cw-cVw"/>
+        <segue reference="if6-36-OuH"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="paperplane" catalog="system" width="128" height="119"/>

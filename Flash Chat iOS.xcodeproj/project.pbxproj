@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		950659F92A2A3C1C00C992A0 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 950659F82A2A3C1C00C992A0 /* Message.swift */; };
 		9518D70D2A24BCF800A2EC45 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9518D70C2A24BCF800A2EC45 /* AppDelegate.swift */; };
 		9518D70F2A24BCF800A2EC45 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9518D70E2A24BCF800A2EC45 /* SceneDelegate.swift */; };
 		9518D7142A24BCF800A2EC45 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9518D7122A24BCF800A2EC45 /* Main.storyboard */; };
@@ -19,6 +20,7 @@
 		9518D73F2A24BDAF00A2EC45 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9518D73E2A24BDAF00A2EC45 /* LoginViewController.swift */; };
 		9518D7422A24BDDC00A2EC45 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9518D7412A24BDDC00A2EC45 /* RegisterViewController.swift */; };
 		9518D7442A24BE7100A2EC45 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9518D7432A24BE7100A2EC45 /* WelcomeViewController.swift */; };
+		952799ED2A2A328400AAD384 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 952799EC2A2A328400AAD384 /* Constants.swift */; };
 		953DB05E2A24E556009DCC5E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 953DB05D2A24E556009DCC5E /* GoogleService-Info.plist */; };
 		953DB0612A24E66C009DCC5E /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 953DB0602A24E66C009DCC5E /* FirebaseAnalytics */; };
 		953DB0632A24E66C009DCC5E /* FirebaseAnalyticsOnDeviceConversion in Frameworks */ = {isa = PBXBuildFile; productRef = 953DB0622A24E66C009DCC5E /* FirebaseAnalyticsOnDeviceConversion */; };
@@ -47,6 +49,8 @@
 		953DB0912A24E66C009DCC5E /* FirebaseRemoteConfigSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 953DB0902A24E66C009DCC5E /* FirebaseRemoteConfigSwift */; };
 		953DB0932A24E66C009DCC5E /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 953DB0922A24E66C009DCC5E /* FirebaseStorage */; };
 		953DB0952A24E66C009DCC5E /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 953DB0942A24E66C009DCC5E /* FirebaseStorageCombine-Community */; };
+		95C05EAD2A2D192A003F812A /* MassageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C05EAB2A2D192A003F812A /* MassageCell.swift */; };
+		95C05EAE2A2D192A003F812A /* MassageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 95C05EAC2A2D192A003F812A /* MassageCell.xib */; };
 		D5F4D76AC38C6BBA3559F44C /* libPods-Flash Chat iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CFCC2EC77FE4B4C5133A4933 /* libPods-Flash Chat iOS.a */; };
 /* End PBXBuildFile section */
 
@@ -70,6 +74,7 @@
 /* Begin PBXFileReference section */
 		0B52999C99F5C3ABAB646EDB /* Pods-Flash Chat iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flash Chat iOS.debug.xcconfig"; path = "Target Support Files/Pods-Flash Chat iOS/Pods-Flash Chat iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		1157BA264662F01795391E53 /* Pods-Flash Chat iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flash Chat iOS.release.xcconfig"; path = "Target Support Files/Pods-Flash Chat iOS/Pods-Flash Chat iOS.release.xcconfig"; sourceTree = "<group>"; };
+		950659F82A2A3C1C00C992A0 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		9518D7092A24BCF800A2EC45 /* Flash Chat iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Flash Chat iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9518D70C2A24BCF800A2EC45 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9518D70E2A24BCF800A2EC45 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -86,7 +91,10 @@
 		9518D73E2A24BDAF00A2EC45 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		9518D7412A24BDDC00A2EC45 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		9518D7432A24BE7100A2EC45 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		952799EC2A2A328400AAD384 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		953DB05D2A24E556009DCC5E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		95C05EAB2A2D192A003F812A /* MassageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MassageCell.swift; sourceTree = "<group>"; };
+		95C05EAC2A2D192A003F812A /* MassageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MassageCell.xib; sourceTree = "<group>"; };
 		CFCC2EC77FE4B4C5133A4933 /* libPods-Flash Chat iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Flash Chat iOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -151,6 +159,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		950659F72A2A3C0500C992A0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				950659F82A2A3C1C00C992A0 /* Message.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		9518D7002A24BCF800A2EC45 = {
 			isa = PBXGroup;
 			children = (
@@ -178,12 +194,13 @@
 			children = (
 				9518D70C2A24BCF800A2EC45 /* AppDelegate.swift */,
 				9518D70E2A24BCF800A2EC45 /* SceneDelegate.swift */,
+				950659F72A2A3C0500C992A0 /* Models */,
 				9518D7402A24BDCF00A2EC45 /* Controllers */,
-				9518D7122A24BCF800A2EC45 /* Main.storyboard */,
 				9518D7152A24BCFA00A2EC45 /* Assets.xcassets */,
 				9518D7172A24BCFA00A2EC45 /* LaunchScreen.storyboard */,
 				9518D71A2A24BCFA00A2EC45 /* Info.plist */,
 				953DB05D2A24E556009DCC5E /* GoogleService-Info.plist */,
+				952799EC2A2A328400AAD384 /* Constants.swift */,
 			);
 			path = "Flash Chat iOS";
 			sourceTree = "<group>";
@@ -212,8 +229,19 @@
 				9518D7412A24BDDC00A2EC45 /* RegisterViewController.swift */,
 				9518D73E2A24BDAF00A2EC45 /* LoginViewController.swift */,
 				9518D73C2A24BD9B00A2EC45 /* ChatViewController.swift */,
+				95C05EAA2A2D18ED003F812A /* Views */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		95C05EAA2A2D18ED003F812A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9518D7122A24BCF800A2EC45 /* Main.storyboard */,
+				95C05EAB2A2D192A003F812A /* MassageCell.swift */,
+				95C05EAC2A2D192A003F812A /* MassageCell.xib */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		C995FB94A2986641CC3BC792 /* Pods */ = {
@@ -364,6 +392,7 @@
 			files = (
 				9518D7192A24BCFA00A2EC45 /* LaunchScreen.storyboard in Resources */,
 				953DB05E2A24E556009DCC5E /* GoogleService-Info.plist in Resources */,
+				95C05EAE2A2D192A003F812A /* MassageCell.xib in Resources */,
 				9518D7162A24BCFA00A2EC45 /* Assets.xcassets in Resources */,
 				9518D7142A24BCF800A2EC45 /* Main.storyboard in Resources */,
 			);
@@ -419,6 +448,9 @@
 				9518D73D2A24BD9B00A2EC45 /* ChatViewController.swift in Sources */,
 				9518D7422A24BDDC00A2EC45 /* RegisterViewController.swift in Sources */,
 				9518D73F2A24BDAF00A2EC45 /* LoginViewController.swift in Sources */,
+				95C05EAD2A2D192A003F812A /* MassageCell.swift in Sources */,
+				952799ED2A2A328400AAD384 /* Constants.swift in Sources */,
+				950659F92A2A3C1C00C992A0 /* Message.swift in Sources */,
 				9518D70F2A24BCF800A2EC45 /* SceneDelegate.swift in Sources */,
 				9518D7442A24BE7100A2EC45 /* WelcomeViewController.swift in Sources */,
 			);
